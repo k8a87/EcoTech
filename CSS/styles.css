@@ -1,8 +1,8 @@
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
+  --color-primary: #54f20b;
+  --color-secondary: #98e73e;
+  --color-accent: #37fb13;
+  --color-headings: #076019;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #cccc;
@@ -224,7 +224,7 @@ a {
 }
 
 .btn--primary:hover {
-  background: #00c8eb;
+  background: var(--color-accent);
 }
 
 .btn--secondary {
@@ -232,7 +232,7 @@ a {
   color: #ffff;
 }
 .btn--secondary:hover {
-  background: #53e2fc;
+  background: #88fc53;
 }
 
 .btn--accent {
@@ -241,7 +241,7 @@ a {
 }
 
 .btn--accent:hover {
-  background: #ec3000;
+  background: #2ac30f;
 }
 
 .btn--outline {
@@ -251,8 +251,9 @@ a {
 }
 
 .btn--outline:hover {
-  background: var(--color-headings);
+  background: var(--color-secondary);
   color: #ffff;
+  border: 0;
 }
 
 .btn--block {
@@ -323,10 +324,10 @@ a {
 }
 
 .card--primary .badge--small {
-  background-color: #066bf0;
+  background-color: #06f016;
 }
 .card--secondary .badge--small {
-  background-color: #02cdf1;
+  background-color: #02f13e;
 }
 
 /* Plans */
@@ -612,6 +613,11 @@ a {
   color: #7b858b;
 }
 
+.block--primary {
+  background: #061c05;
+  color: #7b858b;
+}
+
 /* toDelete
 .block--dark .block__heading {
   color: #ffff;
@@ -621,6 +627,12 @@ a {
 .block--dark h1,
 .block--dark h2,
 .block--dark h3 {
+  color: #ffff;
+}
+
+.block--primary h1,
+.block--primary h2,
+.block--primary h3 {
   color: #ffff;
 }
 /*REVISE CALC........................................................................................................*/
@@ -716,7 +728,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 0;
+    padding-top: 10rem;
   }
   .hero__content {
     text-align: left;
